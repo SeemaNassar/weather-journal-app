@@ -1,0 +1,148 @@
+body {
+    background: #e0f7fa; /* Light blue background */
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #3b4a6b;
+    color: #f0d43a;
+    padding: 20px;
+}
+
+.headline {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.holder {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.zip, .feel, .entry {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    background-color: #f0d43a;
+    border: 2px solid #f0d43a;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #22b2da; /* Change border color on focus */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #22b2da;
+    color: #f0d43a;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1f9bb4; /* Darker blue when hovered */
+}
+
+.entry {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.entry .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#entryHolder {
+    display: flex;
+    flex-direction: column;
+}
+
+#date, #temp, #content {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 8px;
+    background-color: #f0d43a;
+    border-radius: 5px;
+}
+
+#date {
+    background-color: #f23557;
+}
+
+#temp {
+    background-color: #ff9800;
+}
+
+#content {
+    background-color: #4caf50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #app {
+        padding: 10px;
+    }
+
+    .headline {
+        font-size: 36px;
+    }
+
+    .holder {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    button {
+        font-size: 22px;
+    }
+
+    .entry .title {
+        font-size: 24px;
+    }
+}
